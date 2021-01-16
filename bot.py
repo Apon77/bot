@@ -1,4 +1,4 @@
-#pip install pyTelegramBotAPI
+#pip install --user pyTelegramBotAPI
 import telebot
 import time
 
