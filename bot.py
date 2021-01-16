@@ -10,5 +10,10 @@ bot = telebot.TeleBot(token=bot_token)
 def send_welcome(message):
     bot.reply_to(message, 'Welcome!')
 
-bot.polling()
-    
+#bot.polling()
+
+while True:
+    try:
+        bot.polling()
+    except Exception:
+        time.sleep(15)
