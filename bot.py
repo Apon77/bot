@@ -24,7 +24,7 @@ def at_answer(message):
     texts = message.text.split()
     at_text = find_at(texts)
 
-    bot.reply_to(message, 'https://instagram.com/{}'.format(at_text))
+    bot.reply_to(message, 'https://instagram.com/{}'.format(at_text[1:]))
 
 #bot.polling()
 
